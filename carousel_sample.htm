@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel Sample</title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery-carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet/jquery-carousel.css">
+</head>
+<script>
+jQuery(function($) {
+    createColumns({
+          column_size : 3
+        , data :
+            [
+                  { img : 'img/image01.jpg', url : 'img/image01.jpg'}
+                , { img : 'img/image02.jpg', url : 'img/image02.jpg'}
+                , { img : 'img/image03.jpg', url : 'img/image03.jpg'}
+                , { img : 'img/image04.jpg', url : 'img/image04.jpg'}
+                , { img : 'img/image05.jpg', url : 'img/image05.jpg'}
+                , { img : 'img/image06.jpg', url : 'img/image06.jpg'}
+                , { img : 'img/image07.jpg', url : 'img/image07.jpg'}
+                , { img : 'img/image08.jpg', url : 'img/image08.jpg'}
+            ]
+    });
+});
+</script>
+<style>
+    body {
+        background-color: #87bcea;
+    }
+</style>
+<body>
+    <div id="carousel-panel">
+        <span id="carousel-prev"><a href="#">＜</a></span>
+        <div id="carousel-wrapper">
+        </div>
+        <span id="carousel-next"><a href="#">＞</a></span>
+    </div>
+</body>
+</html>
